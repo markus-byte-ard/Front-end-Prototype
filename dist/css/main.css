@@ -6,6 +6,15 @@
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
+.menu-btn:hover .btn-line:nth-child(1) {
+  background: #eece1a;
+}
+.menu-btn:hover .btn-line:nth-child(2) {
+  background: #eece1a;
+}
+.menu-btn:hover .btn-line:nth-child(3) {
+  background: #eece1a;
+}
 .menu-btn .btn-line {
   width: 28px;
   height: 3px;
@@ -30,7 +39,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  background: rgba(68, 68, 68, 0.9);
   visibility: hidden;
 }
 .menu.show {
@@ -49,7 +58,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #373737;
+  background: rgba(55, 55, 55, 0.7);
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -58,7 +67,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background: #444;
+  background: rgba(68, 68, 68, 0.7);
   transition: all 0.5s ease-out;
   transform: translate3d(0, 100%, 0);
 }
@@ -88,7 +97,7 @@
   font-size: 30px;
   text-transform: uppercase;
   padding: 1rem 0;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   text-decoration: none;
   transition: all 0.5s ease-out;
@@ -156,6 +165,7 @@ h3.lg-heading {
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
+  display: inline-block;
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   background: rgba(73, 73, 73, 0.5);

@@ -6,6 +6,22 @@
   top: 35px;
   cursor: pointer;
   @include easeOut;
+  &:hover {
+    .btn-line {
+      // Line 1 color
+      &:nth-child(1) {
+        background: $secondary-color;
+      }
+      // Line 2 color
+      &:nth-child(2) {
+        background: $secondary-color;
+      }
+      // Line 3 color
+      &:nth-child(3) {
+        background: $secondary-color;
+      }
+    }
+  }
 
   .btn-line {
     width: 28px;
@@ -41,7 +57,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  //opacity: 0.9;
+  background: rgba(68, 68, 68, 0.9);
   visibility: hidden;
 
   &.show {
@@ -62,7 +79,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: rgba(darken($primary-color, 5), 0.7);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -75,7 +92,7 @@
 
   // Branding side
   &-branding {
-    background: $primary-color;
+    background: rgba($primary-color, 0.7);
     @include easeOut;
     transform: translate3d(0, 100%, 0);
 
@@ -110,7 +127,7 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: 400;
     color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
