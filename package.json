@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Front-End Project",
   "main": "index.js",
-  "homepage": "https://markus-byte-ard.github.io/Front-end-Project",
+  "homepage": "https://markus-byte-ard.github.io/Front-end-Prototype",
   "scripts": {
     "sass": "sass --watch scss/:dist/css/",
     "deploy": "gh-pages -d dist"
